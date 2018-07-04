@@ -14,6 +14,7 @@ var app = express();
 // Basic Configuration 
 var port = process.env.PORT || 3000;
 
+// process.env.MONGOLAB_URI=mongodb://<dbuser>:<dbpassword>@ds125181.mlab.com:25181/fcc_url-shortener
 mongoose.connect(process.env.MONGOLAB_URI, { useMongoClient: true });
 
 const Schema = mongoose.Schema;
